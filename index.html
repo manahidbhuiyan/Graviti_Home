@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind with Custom CSS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plus Jakarta Sans  -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="bg-[#000000]">
+
+    <div class="max-w-[1894px] mx-auto flex items-top justify-around text-white">
+        <!-- Left: Logo -->
+        <div class="text-xl font-bold py-4">
+            <img src="./assets/logo.png" alt="Logo" class="w-[118px]">
+        </div>
+    
+        <!-- Middle: Navigation (slightly left from center) -->
+        <div>
+            <ul class="flex gap-10 text-[16px] leading-[16px] items-center py-4">
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> About</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Services</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Portfolio</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Why Us</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Contact Us</a></li>
+            </ul>
+        </div>
+    
+        <!-- Banner Images (Fix for Proper Display) -->
+        <div class="flex gap-2 h-full items-center">
+            <img src="./assets/banner-image-1.png" alt="Banner 1" class="h-[400px] w-auto object-cover">
+            <img src="./assets/banner-image-2.png" alt="Banner 2" class="h-[400px] w-auto object-cover">
+        </div>
+    
+        <!-- Right: Search Icon -->
+        <div class="text-xl cursor-pointer py-4">🔍</div>
+    </div>
+    
+
+
+</body>
+</html>
