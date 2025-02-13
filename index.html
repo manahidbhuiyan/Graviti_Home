@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,193 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Plus Jakarta Sans  -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Link to Custom CSS -->
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body class="bg-[#000000]">
 
+<body class="bg-[#000000]">
     <div class="max-w-[1894px] mx-auto flex items-top justify-around text-white">
         <!-- Left: Logo -->
         <div class="text-xl font-bold py-4">
             <img src="./assets/logo.png" alt="Logo" class="w-[118px]">
         </div>
-    
+
         <!-- Middle: Navigation (slightly left from center) -->
         <div>
             <ul class="flex gap-10 text-[16px] leading-[16px] items-center py-4">
-                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> About</a></li>
-                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Services</a></li>
-                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Portfolio</a></li>
-                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Why Us</a></li>
-                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Contact Us</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>
+                        About</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>
+                        Services</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>
+                        Portfolio</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span> Why
+                        Us</a></li>
+                <li><a href="#" class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>
+                        Contact Us</a></li>
             </ul>
         </div>
-    
+
         <!-- Banner Images (Fix for Proper Display) -->
         <div class="flex gap-2 h-full items-center">
             <img src="./assets/banner-image-1.png" alt="Banner 1" class="h-[400px] w-auto object-cover">
             <img src="./assets/banner-image-2.png" alt="Banner 2" class="h-[400px] w-auto object-cover">
         </div>
-    
+
         <!-- Right: Search Icon -->
         <div class="text-xl cursor-pointer py-4">🔍</div>
     </div>
-    
+    <!-- Features start -->
+    <section id="features" class="mt-5">
+        <div class="container mx-auto text-white">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+                <!-- Box 1 -->
+                <div class="relative rounded-sm overflow-hidden group">
+                    <img src="./assets/box-img-1.png" alt="Image 1" class="w-full h-auto object-cover">
+
+                    <!-- Bottom Overlay -->
+                    <div
+                        class="absolute absolute bottom-4 left-4 right-4 h-[60px] bg-black bg-opacity-80 text-white p-3 rounded-sm flex items-center transform scale-100 transition-all duration-500 group-hover:scale-110 group-hover:opacity-0">
+                        <h3 class="text-[15px] md:text-[17px] lg:text-[22px] font-semibold">Data-Driven Results</h3>
+
+                        <!-- Circle Badge inside Overlay -->
+                        <div
+                            class="absolute -top-6 right-4 bg-[#f5900d] text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md">
+                            <img src="./assets/bulb-icon.png" alt="bulb icon" class="object-cover w-6">
+                        </div>
+                    </div>
+                    <!-- Extra Div, appears with scaling -->
+                    <div
+                        class="absolute inset-4 p-6 xl:p-8 bg-black bg-opacity-80 rounded-sm opacity-0 scale-95 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100">
+                        <div class="flex flex-col justify-center space-y-8 lg:space-y-6 xl:space-y-10">
+                            <div>
+                                <h3 class="text-[18px] xl:text-[22px] font-semibold mb-6">
+                                    Innovative
+                                    Strategies</h3>
+                                <p class="text-[#5d5d5d] text[11px] xl:text-[15px] font-semibold mb-3">
+                                    Innovative marketing strategies
+                                    tailored
+                                </p>
+                                <p class="text-[#5d5d5d] text[11px] xl:text-[15px] font-semibold">to
+                                    your goals and needs.</p>
+                            </div>
+                            <div class="border-t-[1px] border-[#302d27]">
+                                <button class="flex items-center justify-center space-x-4 mt-4">
+                                    <p class="text-[14px]">Get Started</p>
+                                    <img src="./assets/arrow-up.png" alt="arrow-up" class="w-3 h-3">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="relative rounded-sm overflow-hidden group">
+                    <img src="./assets/box-img-1.png" alt="Image 1" class="w-full h-auto object-cover">
+
+                    <!-- Bottom Overlay -->
+                    <div
+                        class="absolute absolute bottom-4 left-4 right-4 h-[60px] bg-black bg-opacity-80 text-white p-3 rounded-sm flex items-center transform scale-100 transition-all duration-500 group-hover:scale-110 group-hover:opacity-0">
+                        <h3 class="text-[15px] md:text-[17px] lg:text-[22px] font-semibold">Data-Driven Results</h3>
+
+                        <!-- Circle Badge inside Overlay -->
+                        <div
+                            class="absolute -top-6 right-4 bg-[#f5900d] text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md">
+                            <img src="./assets/bulb-icon.png" alt="bulb icon" class="object-cover w-6">
+                        </div>
+                    </div>
+                    <!-- Extra Div, appears with scaling -->
+                    <div
+                        class="absolute inset-4 p-8 bg-black bg-opacity-80 rounded-sm opacity-0 scale-95 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100">
+                        <div>
+                            <h3 class="text-[15px] md:text-[17px] lg:text-[22px] font-semibold mb-6">Innovative
+                                Strategies</h3>
+                            <p class="text-[#5d5d5d] text-[15px] font-semibold mb-3">Innovative marketing strategies
+                                tailored
+                            </p>
+                            <p class="text-[#5d5d5d] text-[15px] font-semibold mb-10">to your goals and needs.</p>
+                        </div>
+                        <div class="border-t-[1px] border-[#302d27]">
+                            <button class="flex items-center justify-center space-x-8 mt-4">
+                                <p class="text-[14px]">Get Started</p>
+                                <img src="./assets/arrow-up.png" alt="arrow-up" class="w-3 h-3">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="relative rounded-sm overflow-hidden group">
+                    <img src="./assets/box-img-1.png" alt="Image 1" class="w-full h-auto object-cover">
+
+                    <!-- Bottom Overlay -->
+                    <div
+                        class="absolute absolute bottom-4 left-4 right-4 h-[60px] bg-black bg-opacity-80 text-white p-3 rounded-sm flex items-center transform scale-100 transition-all duration-500 group-hover:scale-110 group-hover:opacity-0">
+                        <h3 class="text-[15px] md:text-[17px] lg:text-[22px] font-semibold">Lead Gen & Sales</h3>
+
+                        <!-- Circle Badge inside Overlay -->
+                        <div
+                            class="absolute -top-6 right-4 bg-[#f5900d] text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md">
+                            <img src="./assets/bulb-icon.png" alt="bulb icon" class="object-cover w-6">
+                        </div>
+                    </div>
+                    <!-- Extra Div, appears with scaling -->
+                    <div
+                        class="absolute inset-4 p-8 bg-black bg-opacity-80 rounded-sm opacity-0 scale-95 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100">
+                        <div>
+                            <h3 class="text-[15px] md:text-[17px] lg:text-[22px] font-semibold mb-6">Innovative
+                                Strategies</h3>
+                            <p class="text-[#5d5d5d] text-[15px] font-semibold mb-3">Innovative marketing strategies
+                                tailored
+                            </p>
+                            <p class="text-[#5d5d5d] text-[15px] font-semibold mb-10">to your goals and needs.</p>
+                        </div>
+                        <div class="border-t-[1px] border-[#302d27]">
+                            <button class="flex items-center justify-center space-x-8 mt-4">
+                                <p class="text-[14px]">Get Started</p>
+                                <img src="./assets/arrow-up.png" alt="arrow-up" class="w-3 h-3">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features end -->
+    <!-- About Agency start -->
+    <section id="agency" class="py-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 p-4 space-y-4 md:space-y-0">
+                <div>
+                    <img src="./assets//agency-img.png" alt="agency image" class="w-auto object-fit">
+                </div>
+                <div class="text-white flex flex-col space-y-2">
+                    <div class="w-2 h-2 bg-[#f5900d] rounded-full"></div>
+                    <div class="flex flex-col space-y-2">
+                        <p class="text-[14px] text-[#5d5d5d]">About The Agency</p>
+                        <h2 class="text-[50px]">We Made Digital Work For You</h2>
+                        <p class="text-[15px] text-[#5d5d5d] mb-3">At Graviti Marketing, we don’t just create
+                            campaigns—we engineer success. As a leading
+                            Australian digital marketing agency, we specialize in PPC, SEO, web marketing, and social
+                            media to ensure your business gets noticed by the right people at the right time. </p>
+                        <p class="text-[15px] text-[#5d5d5d] mb-10">
+                            At Graviti Marketing, we don’t just create campaigns—we engineer success. As a leading
+                            Australian digital marketing agency, we specialize in PPC, SEO, web marketing, and social
+                            media to ensure your business gets noticed by the right people at the right time.
+                        </p>
+                        <button
+                            class="px-6 py-3 flex items-center justify-center bg-[#f5900d] max-w-[250px] text-white curson-pointer">Get
+                            Started!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Agency end -->
+
 
 
 </body>
+
 </html>
